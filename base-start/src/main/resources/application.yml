@@ -1,0 +1,12 @@
+server:
+  port: 6001
+
+eureka:
+  instance:
+    hostname: 118.190.36.106
+    appname: security-client
+
+  client:
+   # enabled: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:5555/eureka/
